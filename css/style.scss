@@ -6,7 +6,7 @@
 #container{
   width:100vw;
   height:100vh;
-  background-color: #c4c4c4;
+  // background-color: #c4c4c4;
 
   & div{
     border:1px solid black;
@@ -38,13 +38,13 @@
 
       // menu color
       &>div:nth-child(1){
-        background-color: rgb(112, 112, 146);
+        background-color: #7592A7;
         width:100%;
         height:85%;
         
       }
       &>div:nth-child(2){
-        background-color: rgb(112, 112, 146);
+        background-color: #7592A7;
         width:100%;
         height:10%;
       }
@@ -69,6 +69,8 @@
       line-height: 800px;
       font-size: 70px;
       text-align: end;
+      color: #7592A7;
+
         font-weight: 20px;
     }
     
@@ -80,7 +82,7 @@
       top:-600px;
       left:50px;
       z-index: 2;
-      background-color: rgb(198, 244, 244);
+      background-color: #D5E0E8;
 
       
 
@@ -94,13 +96,35 @@
         font-size: 100px;
         font-weight: bold;
         text-align: center;
+
+        &>div:nth-child(1){
+          position: relative;
+          top:140px;
+          left:-5px;
+          color:#7693A6;
+          z-index: 1;
+        }
+
+        &>div:nth-child(2){
+          position: relative;
+          z-index: 2;
+          color:#ffffff;
+        }
+        
+        
       }
 
-
+      // 바 부분
       &>div:nth-child(2){
         width:150px;
         height:5px;
       }
+
+      &>div:nth-child(3){
+        text-align: center;
+        color:#819BAF;
+      }
+      
 
     }
 
@@ -111,7 +135,7 @@
       position: relative;
       top:-1150px;
       left:200px;
-      background-color: rgb(182, 240, 240);
+      background-color: #7693A6;
       z-index: 1;
     }
     
