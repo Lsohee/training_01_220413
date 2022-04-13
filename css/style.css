@@ -65,6 +65,20 @@
   height: 90%;
 }
 
+@media (min-width: 1000px) {
+  #container > div:nth-child(2) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 #container > div:nth-child(2) > div:nth-child(1) {
   width: 100px;
   height: 100%;
@@ -75,6 +89,13 @@
   text-align: end;
   color: #7592A7;
   font-weight: 20px;
+}
+
+@media (min-width: 1000px) {
+  #container > div:nth-child(2) > div:nth-child(1) {
+    position: absolute;
+    left: 0;
+  }
 }
 
 #container > div:nth-child(2) > div:nth-child(2) {
@@ -97,6 +118,15 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (min-width: 1000px) {
+  #container > div:nth-child(2) > div:nth-child(2) {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 30%;
+  }
 }
 
 #container > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) {
@@ -122,11 +152,13 @@
 #container > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) {
   width: 150px;
   height: 5px;
+  background-color: #7693A6;
 }
 
 #container > div:nth-child(2) > div:nth-child(2) > div:nth-child(3) {
   text-align: center;
   color: #819BAF;
+  margin: 10px;
 }
 
 #container > div:nth-child(2) > div:nth-child(3) {
@@ -137,5 +169,15 @@
   left: 200px;
   background-color: #7693A6;
   z-index: 1;
+}
+
+@media (min-width: 1000px) {
+  #container > div:nth-child(2) > div:nth-child(3) {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 20%;
+    margin: 10px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
